@@ -1,0 +1,185 @@
+:root {
+    --black: #11151f;
+    --dark-grey: #d4d4d4;
+    --grey-blue-hover: #283040;
+    --grey-blue: #374456;
+    --mid-grey: #f1f1f1;
+    --white: #fcfcfc;
+    --yellow: #e5b261;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+/* ON YOUR OWN
+
+    Write a special media query that only applies to the two smallest screen sizes. In these layouts, the brand (the logo and name of the company should):
+
+    1. be positioned at the top of the page
+    2. have white text
+    3. have a drop-shadow on the text
+
+*/
+
+h1 {
+    font-size: 2rem;
+}
+
+.form {
+    padding: 1rem;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.logo img {
+    width: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+    bottom: 36rem;
+}
+
+.logo p {
+    color: var(--white);
+    font-weight: bold;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: var(--mid-grey);
+}
+
+input, select {
+    width: 100%;
+    border: 0.063rem solid var(--mid-grey);
+    border-radius: 0.313rem;
+    padding: 0.5rem;
+    box-shadow: 0.125rem 0.125rem 0.188rem #e8e8e8;
+    margin-bottom: 1.5rem;
+}
+
+.passoword-text {
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    border: 0.063rem solid var(--mid-grey);
+    padding: 1rem;
+}
+
+.text-plan {
+    background-color: var(--yellow);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+input[type=submit] {
+    background-color: var(--grey-blue);
+    width: 100%;
+    color: var(--white);
+}
+
+
+input[type=submit]:hover {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--grey-blue-hover)
+}
+
+.foot-notes  {
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    fieldset div {
+        flex: 0 1 48%;
+    }
+
+    .form {
+        margin: 2rem;
+    }
+
+    section {
+        max-width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    .form {
+        padding: 0;
+    }
+
+    .text {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .logo {
+        position: relative;
+        bottom: 49rem;
+    }
+
+    .foot-notes {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .container {
+        display: flex;
+    }
+
+
+    section {
+        max-width: 50rem;
+    }
+
+    .banner img {
+        width: 40rem;
+    }
+
+    .form {
+        padding: 0;
+    }
+
+    .text {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .logo {
+        display: flex;
+        gap: 0.5rem;
+        position: static;
+        margin-top: 1rem;
+    }
+    
+    .logo p {
+        color: var(--black);
+    }
+}
+
